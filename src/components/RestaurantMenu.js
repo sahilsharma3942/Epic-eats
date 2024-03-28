@@ -10,14 +10,14 @@ const RestaurantMenu = ()=>{
     
 
     return (!restaurant?<Shimmer/>:
-        <div className="menu">
+        <div >
             <h1>Restuarant id :{id}</h1>
-            <h2>{restaurant?.cards[0]?.card.card.info.name}</h2>
-            <img src={IMG_CDN_URL+restaurant?.cards[0]?.card.card.info.cloudinaryImageId}></img>
-            <h3>{restaurant?.cards[0]?.card.card.info.areaName}</h3>
-            <h3>{restaurant?.cards[0]?.card.card.info.city}</h3>
-            <h3>{restaurant?.cards[0]?.card.card.info.avgRating} stars</h3>
-            <h3>{restaurant?.cards[0]?.card.card.info.costForTwoMessage}</h3>
+            <h2>{restaurant?.cards[2]?.card?.card?.info?.name}</h2>
+            <img src={IMG_CDN_URL+restaurant?.cards[2]?.card?.card?.info?.cloudinaryImageId}></img>
+            <h3>{restaurant?.cards[2]?.car?.card?.info?.areaName}</h3>
+            <h3>{restaurant?.cards[2]?.card?.card?.info?.city}</h3>
+            <h3>{restaurant?.cards[2]?.card?.card?.info?.avgRating} stars</h3>
+            <h3>{restaurant?.cards[2]?.card?.card?.info?.costForTwoMessage}</h3>
         </div>
     )
 }
